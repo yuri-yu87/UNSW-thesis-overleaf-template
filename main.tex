@@ -1,0 +1,35 @@
+\documentclass[12pt, a4paper]{report}
+
+\providecommand{\keywords}[1]
+{
+  \small
+  \textbf{\textit{Keywords---}} #1
+}
+
+\include{doc/latexdefs}
+
+\begin{document}
+\thispagestyle{empty}
+\include{doc/cover}
+\include{doc/summary}
+\include{doc/abstract}
+
+\pagestyle{plain}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\include{doc/acknowledgements}
+\include{doc/abbreviations}
+\tableofcontents
+%\listoffigures
+%\listoftables
+\include{doc/introduction}
+\include{doc/background}
+\include{doc/mywork}
+\include{doc/evaluation}
+\include{doc/conclusion}
+\bibliographystyle{plain}
+\bibliography{ref/pubs}
+\appendix
+\include{doc/appendix}
+\end{document}
